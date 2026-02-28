@@ -70,7 +70,7 @@ CREATE TABLE bronze.erp_cust_az12(
 );
 
 CREATE TABLE bronze.erp_px_cat_g1v2(
-	cid NVARCHAR(50),
+	id NVARCHAR(50),
 	cat NVARCHAR(50),
 	subcat NVARCHAR(50),
 	maintenance NVARCHAR(50)

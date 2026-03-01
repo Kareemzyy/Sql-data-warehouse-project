@@ -30,7 +30,6 @@ EXEC silver.load_silver
 Begin
 
 
-	begin TRY
 		PRINT 'TURNCATING silver_crm_cust_info';
 		TRUNCATE TABLE silver.crm_cust_info;
 		PRINT 'Inserting data into: silver.crm_cust-info';

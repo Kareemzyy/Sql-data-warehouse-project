@@ -21,7 +21,6 @@ Usage Example:
 
 
 
-EXEC silver.load_silver
 
 
 	
@@ -30,9 +29,9 @@ EXEC silver.load_silver
 Begin
 
 
-		PRINT 'TURNCATING silver_crm_cust_info';
+		PRINT 'Truncating: silver.crm_cust_info';
 		TRUNCATE TABLE silver.crm_cust_info;
-		PRINT 'Inserting data into: silver.crm_cust-info';
+		PRINT 'Inserting data into: silver.crm_cust_info';
 
 		INSERT INTO silver.crm_cust_info(
 		cst_id,
@@ -44,13 +43,6 @@ Begin
 		cst_create_date) 
 
 
-		/*ALTER TABLE bronze.crm_cust_info ADD cst_marital_status NVARCHAR(50);
-		UPDATE bronze.crm_cust_info SET cst_marital_status = cst_material_status
-
-		ALTER TABLE silver.crm_cust_info ADD cst_marital_status NVARCHAR(50);
-		UPDATE silver.crm_cust_info SET cst_marital_status = cst_material_status
-
-		ALTER TABLE silver.crm_cust_info DROP COLUMN cst_material_status*/
 
 		SELECT 
 		cst_id,
@@ -81,7 +73,7 @@ Begin
 
 		/* ---------------------ANOTHER TABLE------------------------*/
 
-		PRINT 'TURNCATING silver.crm_prd_info ';
+		PRINT 'Truncating: silver.crm_prd_info ';
 		TRUNCATE TABLE silver.crm_prd_info;
 		PRINT 'Inserting data into: silver.crm_prd_info';
 
@@ -114,7 +106,7 @@ Begin
 		From bronze.crm_prd_info;
 		/* ---------------------ANOTHER TABLE------------------------*/
 
-		PRINT 'TURNCATING silver.crm_sales_details';
+		PRINT 'Truncating: silver.crm_sales_details';
 		TRUNCATE TABLE silver.crm_sales_details;
 		PRINT 'Inserting data into :silver.crm_sales_details';
 
@@ -161,7 +153,7 @@ Begin
 		/* ---------------------ANOTHER TABLE------------------------*/
 
 
-		PRINT 'TURNCATING silver.erp_cust_az12';
+		PRINT 'Truncating: silver.erp_cust_az12';
 		TRUNCATE TABLE silver.erp_cust_az12;
 		PRINT 'Inserting data into :silver.erp_cust_az12';
 
@@ -188,7 +180,7 @@ Begin
 
 		/* ---------------------ANOTHER TABLE------------------------*/
 
-		PRINT 'TURNCATING silver.erp_loc_a101';
+		PRINT 'Truncating: silver.erp_loc_a101';
 		TRUNCATE TABLE silver.erp_loc_a101;
 		PRINT 'Inserting data into :silver.erp_loc_a101';
 
